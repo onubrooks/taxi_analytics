@@ -40,7 +40,7 @@ select
 from tripdata
 where rn = 1
 
-{% if var('is_test_run', default=true) %}
+{% if var('is_test_run', default=false) %}
 
     limit 100
 
