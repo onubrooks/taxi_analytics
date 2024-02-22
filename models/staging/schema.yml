@@ -7,12 +7,21 @@ sources:
     tables:
       - name: green_tripdata
       - name: yellow_tripdata
+      - name: fhv_tripdata
 
 models:
     - name: stg_fhv_tripdata
       description: >
         Trips made by For Hire Vehicles. The records were collected and provided to the NYC Taxi and Limousine Commission (TLC) by
         technology service providers.
+      columns:
+          - name: dispatching_base_num
+          - name: affiliated_base_number
+          - name: dolocation_id 
+          - name: drop_off_datetime 
+          - name: pickup_datetime 
+          - name: pulocation_id 
+          - name: sr_flag 
         
     - name: stg_green_tripdata
       description: >
